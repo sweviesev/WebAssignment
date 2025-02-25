@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebAssignment</title>
-    <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="Content.css">
+    <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -18,18 +19,43 @@
                 <li class="envelope"><a href="#"><i class="fa fa-envelope"></i></a></li>
                 <li class="bell">
                     <a href="#"><i class="fa fa-bell"></i></a>
-                    <div class="notifications">
+                    <section class="notifications">
                         <p>One new friend request</p>
                         <p>John Doe posted on your wall</p>
                         <p>Jane likes your post</p>
-                    </div>
+                    </section>
                 </li>                
                 <li class="user"><a href="#"><i class="fa fa-user-circle"></i></a></li>
             </ul>
+            
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <i class="fas fa-bars"></i>  
+            </label>
+
+            <aside class="mobile-menu">
+                <ul>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">My Profile</a></li>
+                </ul>
+            </aside>
         </nav>
     </header>
 
     <main class="container">
+        <section class="column">
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ex, hic impedit nobis mollitia quibusdam cupiditate fugiat at et. Dolore beatae, ut culpa quod assumenda esse autem aperiam est ea!</p>
+        </section>
+        <section class="column">
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt itaque illum similique iusto est eos neque voluptas quidem cumque recusandae, vitae aliquid! Asperiores eum repellat aspernatur dolor eos? Debitis, animi!</p>
+        </section>
+        <section class="column">
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, hic aspernatur architecto autem voluptatem porro laborum. Deserunt error numquam aspernatur, quam vel nam rem quidem sequi reiciendis laudantium provident aliquam.</p>
+        </section>
     </main>
 </body>
 </html>
