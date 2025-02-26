@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebAssignment</title>
-    <link rel="stylesheet" href="Content.css">
     <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="Content.css">
+    <link rel="stylesheet" href="Responsiveness.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -44,18 +45,180 @@
     </header>
 
     <main class="container">
-        <section class="column">
-            <h2>Column 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ex, hic impedit nobis mollitia quibusdam cupiditate fugiat at et. Dolore beatae, ut culpa quod assumenda esse autem aperiam est ea!</p>
+        <aside class="left-column">
+            <section class="box profile-box">
+                <h2 class="my-profile">My Profile</h2>
+                <figure>
+                    <img src="images/boy.png" alt="Profile Picture" class="profile-img">
+                </figure>
+                <hr class="profile-divider">
+                <section class="profile-info">
+                    <ul>
+                        <li><i class="fas fa-pencil-alt"></i><span>Designer, UI</span></li>
+                        <li><i class="fas fa-home"></i><span>London, UK</span></li>
+                        <li><i class="fas fa-birthday-cake"></i><span>April 1, 1988</span></li>
+                    </ul>
+                </section>
+            </section>
+        
+            <section class="box menu-box">
+                <ul>
+                    <li><i class="fas fa-circle-notch"></i> My Groups</li>
+                    <li><i class="fas fa-calendar-check"></i> My Events</li>
+                    <li><i class="fas fa-users"></i> My Photos</li>
+                </ul>
+            </section>
+
+            <section class="box interests-box">
+                <h3 class="interests-title">Interests</h3>
+                <section class="tags">
+                    <span class="tag news-tag">News</span>
+                    <span class="tag w3schools-tag">W3Schools</span>
+                    <span class="tag labels-tag">Labels</span>
+                    <span class="tag games-tag">Games</span>
+                    <span class="tag friends-tag">Friends</span>
+                    <span class="tag games2-tag">Games</span>
+                    <span class="tag friends2-tag">Friends</span>
+                    <span class="tag food-tag">Food</span>
+                    <span class="tag design-tag">Design</span>
+                    <span class="tag art-tag">Art</span>
+                    <span class="tag photos-tag">Photos</span>
+                </section>
+            </section>
+
+            <input type="checkbox" id="close-notification" class="close-checkbox">
+            <section class="box notification-box">
+                <h3 class="notification-title">Hey!</h3>
+                <p>People are looking at your profile. Find out who.</p>
+                <label for="close-notification" class="close-btn">&times;</label>
+            </section>
+        </aside>
+        
+        <section class="center-column">
+            <article class="box status-box">
+                <p class="template-info">Social Media template recreated by Fel Raut</p>
+                <input type="text" class="status-input" placeholder="Status: Feeling Blue">
+                <button class="post-btn"><i class="fas fa-pencil-alt"></i> Post</button>
+            </article>
+
+            <article class="box post-box">
+                <header class="post-header">
+                    <figure class="profile">
+                        <img src="images/boy2.png" alt="Profile Picture" class="profile-pic">
+                        <figcaption class="post-author">John Doe</figcaption>
+                    </figure>
+                    <time class="post-time">1 min</time>
+                </header>
+                <hr class="post-divider">
+                <p class="post-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <section class="post-images">
+                    <figure>
+                        <img src="images/lights.jpg" alt="Aurora Image">
+                    </figure>
+                    <figure>
+                        <img src="images/nature.jpg" alt="Mountain Image">
+                    </figure>
+                </section>
+                <footer class="post-actions">
+                    <button class="like-button"><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button class="comment-button"><i class="fas fa-comment"></i> Comment</button>
+                </footer>
+            </article>
+
+            <article class="box post-box-jane">
+                <header class="post-header-jane">
+                    <figure class="profile-jane">
+                        <img src="images/girl2.png" alt="Profile Picture" class="profile-pic-jane">
+                        <figcaption class="post-author-jane">Jane Doe</figcaption>
+                    </figure>
+                    <time class="post-time-jane">16 mins</time>
+                </header>
+                <hr class="post-divider-jane">
+                <p class="post-text-jane">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <footer class="post-actions-jane">
+                    <button class="like-button-jane"><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button class="comment-button-jane"><i class="fas fa-comment"></i> Comment</button>
+                </footer>
+            </article>
+
+            <article class="box post-box-anjie">
+                <header class="post-header-anjie">
+                    <figure class="profile-anjie">
+                        <img src="images/girl.png" alt="Profile Picture" class="profile-pic-anjie">
+                        <figcaption class="post-author">Anjie Jane</figcaption>
+                    </figure>
+                    <time class="post-time-anjie">32 mins</time>
+                </header>
+                <hr class="post-divider-anjie">
+                <p class="post-text-anjie">
+                    Have you seen this?
+                </p>
+                <section class="post-images-anjie">
+                    <figure>
+                        <img src="images/nature.jpg" alt="Aurora Image">
+                    </figure>
+                </section>
+                <p class="post-anothertext-anjie">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In hic necessitatibus reiciendis ex ea dignissimos obcaecati aliquid praesentium atque officia neque fugit veniam harum sunt animi, repellat ducimus et ut?
+                </p>
+                <footer class="post-actions-anjie">
+                    <button class="like-button-anjie"><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button class="comment-button-anjie"><i class="fas fa-comment"></i> Comment</button>
+                </footer>
+            </article>
+            
         </section>
-        <section class="column">
-            <h2>Column 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt itaque illum similique iusto est eos neque voluptas quidem cumque recusandae, vitae aliquid! Asperiores eum repellat aspernatur dolor eos? Debitis, animi!</p>
-        </section>
-        <section class="column">
-            <h2>Column 3</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, hic aspernatur architecto autem voluptatem porro laborum. Deserunt error numquam aspernatur, quam vel nam rem quidem sequi reiciendis laudantium provident aliquam.</p>
-        </section>
+        
+        <aside class="right-column">
+            <article class="box upcoming-events-box">
+                <h3 class="upcoming-title">Upcoming Events:</h3>
+                <figure class="event-image">
+                    <img src="images/forest.jpg" alt="Event Image">
+                </figure>
+                <section class="event-details">
+                    <p class="event-title">Holiday</p>
+                    <p class="event-time">Friday 15:00</p>
+                </section>
+                <footer class="event-footer">
+                    <button class="info-button">Info</button>
+                </footer>
+            </article>
+
+            <section class="box friend-request-box">
+                <h2 class="friend-request-title">Friend Request</h2>
+                <figure class="request-profile">
+                    <img src="images/girl.png" alt="Profile Picture" class="request-img">
+                    <figcaption class="request-name">Jane Doe</figcaption>
+                </figure>
+                <footer class="request-actions">
+                    <button class="accept-btn"><i class="fas fa-check"></i></button>
+                    <button class="decline-btn"><i class="fas fa-times"></i></button>
+                </footer>
+            </section>
+
+            <section class="box ads-box">
+                <h2 class="ads-title">ADS</h2>
+            </section>
+            
+            <section class="box icon-box">
+                <i class="fas fa-bug bug-icon"></i>
+            </section>
+            
+        </aside>        
     </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <p>Footer</p>
+        </div>
+        <div class="footer-bottom">
+            <p>Powered by Coffee and All Nighters</p>
+        </div>
+    </footer>
+
 </body>
 </html>
